@@ -39,8 +39,9 @@ mkdir -p "$tmpdir/podman.run"
 mkdir -p "$tmpdir/fakerepo/dists/$suite/$component"
 
 ( 
-	cd $release_dir/$component
-	tar -cv --transform='s/\.new$//' binary-*/Packages*.new | tar -C "$tmpdir/fakerepo/dists/$suite/$component" -x
+	cd "$release_dir/$component"
+	find . -name "Packages*" -type f -print0 | tar --null -T - -cv | tar -C "$tmpdir/fakerepo/dists/$suite/$component" -x
+	find . -name "Packages*.new" -type f -print0 | tar --null -T - -cv --transform='s/\.new$//' | tar -C "$tmpdir/fakerepo/dists/$suite/$component" -x
 )
 
 if [ "$component" != "main" ]; then
