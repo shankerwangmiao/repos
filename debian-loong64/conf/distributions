@@ -11,8 +11,8 @@ Log: trixie.log
  send-notification
  --changes send-notification
 Contents: .gz percomponent
-Version: 13.3
-Description: Debian 13.3 Released 10 January 2026
+Version: 13.4
+Description: Debian 13.4 Released 14 March 2026
 DebIndices: Packages Release .gz .xz d-i-indice
 UDebIndices: Packages Release .gz .xz
 DscIndices: Sources Release .gz .xz dep11
