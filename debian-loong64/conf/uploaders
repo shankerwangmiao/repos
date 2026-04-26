@@ -1,4 +1,5 @@
 allow architectures 'loong64' | 'all' by group builders
+allow source 'chromium' and architectures 'source' by group builders
 group builders add 0x5FF51169F4F2372F
 group builders add 0xCCA676250B8628E8
 group builders add 0xF08BC4CB1A3F43B3
