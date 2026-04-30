@@ -17,5 +17,5 @@ DebIndices: Packages Release .gz .xz
 UDebIndices: Packages Release .gz .xz
 DscIndices: Sources Release .gz .xz
 ValidFor: 7d
-Update: debian-security-all remove-stable
+Update: debian-security-all
 Uploaders: uploaders
