@@ -38,7 +38,6 @@ DebIndices: Packages Release .gz .xz
 UDebIndices: Packages Release .gz .xz
 DscIndices: Sources Release .gz .xz dep11
 ValidFor: 7d
-Pull: remove-stable
 
 Codename: trixie-proposed-updates
 Suite: proposed-updates
