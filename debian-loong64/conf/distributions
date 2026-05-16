@@ -8,11 +8,9 @@ Origin: Debian
 Label: Debian
 Tracking: minimal includechanges includebuildinfos
 Log: trixie.log
- send-notification
- --changes send-notification
 Contents: .gz percomponent
-Version: 13.4
-Description: Debian 13.4 Released 14 March 2026
+Version: 13.5
+Description: Debian 13.5 Released 16 May 2026
 DebIndices: Packages Release .gz .xz d-i-indice
 UDebIndices: Packages Release .gz .xz
 DscIndices: Sources Release .gz .xz dep11
